@@ -36,7 +36,7 @@ public class LoginTests extends TestBase {
     }
 
     @Test
-    public void WrongPasswordAuthorizationTest() {
+    public void wrongPasswordAuthorizationTest() {
 
         open ("/login.html");
 
@@ -48,7 +48,19 @@ public class LoginTests extends TestBase {
     }
 
     @Test
-    public void TooShortLoginAuthorizationTest() {
+    public void wrongCredentialsAuthorizationTest() {
+
+        open ("/login.html");
+
+        $("[data-testid=login-input]").setValue("user123");
+        $("[data-testid=password-input]").setValue("wrongpassword");
+        $("[data-testid=submit-button]").click();
+
+        $("[data-testid=error-message]").shouldHave(text("Wrong login or password"));
+    }
+
+    @Test
+    public void tooShortLoginAuthorizationTest() {
 
         open ("/login.html");
 
@@ -60,9 +72,21 @@ public class LoginTests extends TestBase {
     }
 
     @Test
-    public void EmptyPasswordAuthorizationTest() {
+    public void tooShortPasswordAuthorizationTest() {
 
-        open ("/login.html");
+        open("/login.html");
+
+        $("[data-testid=login-input]").setValue("user1");
+        $("[data-testid=password-input]").setValue("pas");
+        $("[data-testid=submit-button]").click();
+
+        $("[data-testid=error-message]").shouldHave(text("Password must be at least 6 characters"));
+    }
+
+    @Test
+    public void emptyPasswordAuthorizationTest() {
+
+        open("/login.html");
 
         $("[data-testid=login-input]").setValue("user1");
         $("[data-testid=submit-button]").click();
@@ -70,8 +94,8 @@ public class LoginTests extends TestBase {
         $("[data-testid=error-message]").shouldHave(text("Password is required (minimum 6 characters)"));
     }
 
-    @Test
-    public void EmptyFormAuthorizationTest() {
+        @Test
+    public void emptyFormAuthorizationTest() {
 
         open ("/login.html");
 
@@ -81,7 +105,7 @@ public class LoginTests extends TestBase {
     }
 
     @Test
-    public void TitleVisibilityAuthorizationTest() {
+    public void titleVisibilityAuthorizationTest() {
 
         open ("/login.html");
 

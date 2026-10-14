@@ -1,62 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="LoginTests" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-09-07T12:23:38.379Z" hostname="Z01-23334" time="19.384">
+<testsuite name="LoginTests" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-10-14T11:25:55.699Z" hostname="Z01-23334" time="30.941">
   <properties/>
-  <testcase name="TooShortLoginAuthorizationTest()" classname="LoginTests" time="3.349"/>
-  <testcase name="LogoutButtonVisibilityAuthorizationTest()" classname="LoginTests" time="2.365"/>
-  <testcase name="successfulAuthorizationWithPressEnter()" classname="LoginTests" time="2.209"/>
-  <testcase name="WrongPasswordAuthorizationTest()" classname="LoginTests" time="2.628"/>
-  <testcase name="TitleVisibilityAuthorizationTest()" classname="LoginTests" time="2.252"/>
-  <testcase name="successfulAuthorization()" classname="LoginTests" time="2.292"/>
-  <testcase name="EmptyPasswordAuthorizationTest()" classname="LoginTests" time="2.227"/>
-  <testcase name="EmptyFormAuthorizationTest()" classname="LoginTests" time="2.061"/>
+  <testcase name="LogoutButtonVisibilityAuthorizationTest()" classname="LoginTests" time="8.957"/>
+  <testcase name="successfulAuthorizationWithPressEnter()" classname="LoginTests" time="2.685"/>
+  <testcase name="tooShortLoginAuthorizationTest()" classname="LoginTests" time="2.509"/>
+  <testcase name="emptyFormAuthorizationTest()" classname="LoginTests" time="2.133"/>
+  <testcase name="wrongPasswordAuthorizationTest()" classname="LoginTests" time="2.509"/>
+  <testcase name="titleVisibilityAuthorizationTest()" classname="LoginTests" time="2.408"/>
+  <testcase name="successfulAuthorization()" classname="LoginTests" time="2.381"/>
+  <testcase name="tooShortPasswordAuthorizationTest()" classname="LoginTests" time="2.452"/>
+  <testcase name="emptyPasswordAuthorizationTest()" classname="LoginTests" time="2.18"/>
+  <testcase name="wrongCredentialsAuthorizationTest()" classname="LoginTests" time="2.722"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[[Test worker] INFO com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
-сент. 07, 2026 3:23:38 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$0
-WARNING: The chromedriver version (150.0.7871.115) detected in PATH at C:\Users\alekseevakr\Drivers\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (151.0.7922.174); currently, chromedriver 151.0.7922.138 is recommended for chrome 151.*, so it is advised to delete the driver in PATH and retry
-сент. 07, 2026 3:23:40 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 151, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 151
-[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.16.1 / Selenium 4.43.0 / chrome 151.0.7922.174 windows
+окт. 14, 2026 2:26:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 153
+окт. 14, 2026 2:26:03 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for 153.0.8010.48. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.43.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.16.1 / Selenium 4.43.0 / chrome 153.0.8010.48 windows
 [Test worker] INFO com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
-сент. 07, 2026 3:23:42 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$0
-WARNING: The chromedriver version (150.0.7871.115) detected in PATH at C:\Users\alekseevakr\Drivers\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (151.0.7922.174); currently, chromedriver 151.0.7922.138 is recommended for chrome 151.*, so it is advised to delete the driver in PATH and retry
-сент. 07, 2026 3:23:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 151, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 151
-[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.16.1 / Selenium 4.43.0 / chrome 151.0.7922.174 windows
+окт. 14, 2026 2:26:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 153
+окт. 14, 2026 2:26:06 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for 153.0.8010.48. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.43.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.16.1 / Selenium 4.43.0 / chrome 153.0.8010.48 windows
 [Test worker] INFO com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
-сент. 07, 2026 3:23:44 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$0
-WARNING: The chromedriver version (150.0.7871.115) detected in PATH at C:\Users\alekseevakr\Drivers\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (151.0.7922.174); currently, chromedriver 151.0.7922.138 is recommended for chrome 151.*, so it is advised to delete the driver in PATH and retry
-сент. 07, 2026 3:23:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 151, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 151
-[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.16.1 / Selenium 4.43.0 / chrome 151.0.7922.174 windows
+окт. 14, 2026 2:26:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 153
+окт. 14, 2026 2:26:08 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for 153.0.8010.48. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.43.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.16.1 / Selenium 4.43.0 / chrome 153.0.8010.48 windows
 [Test worker] INFO com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
-сент. 07, 2026 3:23:46 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$0
-WARNING: The chromedriver version (150.0.7871.115) detected in PATH at C:\Users\alekseevakr\Drivers\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (151.0.7922.174); currently, chromedriver 151.0.7922.138 is recommended for chrome 151.*, so it is advised to delete the driver in PATH and retry
-сент. 07, 2026 3:23:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 151, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 151
-[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.16.1 / Selenium 4.43.0 / chrome 151.0.7922.174 windows
+окт. 14, 2026 2:26:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 153
+окт. 14, 2026 2:26:11 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for 153.0.8010.48. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.43.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.16.1 / Selenium 4.43.0 / chrome 153.0.8010.48 windows
 [Test worker] INFO com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
-сент. 07, 2026 3:23:49 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$0
-WARNING: The chromedriver version (150.0.7871.115) detected in PATH at C:\Users\alekseevakr\Drivers\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (151.0.7922.174); currently, chromedriver 151.0.7922.138 is recommended for chrome 151.*, so it is advised to delete the driver in PATH and retry
-сент. 07, 2026 3:23:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 151, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 151
-[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.16.1 / Selenium 4.43.0 / chrome 151.0.7922.174 windows
+окт. 14, 2026 2:26:13 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 153
+окт. 14, 2026 2:26:13 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for 153.0.8010.48. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.43.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.16.1 / Selenium 4.43.0 / chrome 153.0.8010.48 windows
 [Test worker] INFO com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
-сент. 07, 2026 3:23:51 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$0
-WARNING: The chromedriver version (150.0.7871.115) detected in PATH at C:\Users\alekseevakr\Drivers\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (151.0.7922.174); currently, chromedriver 151.0.7922.138 is recommended for chrome 151.*, so it is advised to delete the driver in PATH and retry
-сент. 07, 2026 3:23:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 151, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 151
-[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.16.1 / Selenium 4.43.0 / chrome 151.0.7922.174 windows
+окт. 14, 2026 2:26:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 153
+окт. 14, 2026 2:26:15 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for 153.0.8010.48. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.43.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.16.1 / Selenium 4.43.0 / chrome 153.0.8010.48 windows
 [Test worker] INFO com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
-сент. 07, 2026 3:23:53 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$0
-WARNING: The chromedriver version (150.0.7871.115) detected in PATH at C:\Users\alekseevakr\Drivers\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (151.0.7922.174); currently, chromedriver 151.0.7922.138 is recommended for chrome 151.*, so it is advised to delete the driver in PATH and retry
-сент. 07, 2026 3:23:54 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 151, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 151
-[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.16.1 / Selenium 4.43.0 / chrome 151.0.7922.174 windows
+окт. 14, 2026 2:26:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 153
+окт. 14, 2026 2:26:18 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for 153.0.8010.48. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.43.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.16.1 / Selenium 4.43.0 / chrome 153.0.8010.48 windows
 [Test worker] INFO com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
-сент. 07, 2026 3:23:56 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$0
-WARNING: The chromedriver version (150.0.7871.115) detected in PATH at C:\Users\alekseevakr\Drivers\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (151.0.7922.174); currently, chromedriver 151.0.7922.138 is recommended for chrome 151.*, so it is advised to delete the driver in PATH and retry
-сент. 07, 2026 3:23:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 151, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 151
-[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.16.1 / Selenium 4.43.0 / chrome 151.0.7922.174 windows
+окт. 14, 2026 2:26:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 153
+окт. 14, 2026 2:26:20 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for 153.0.8010.48. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.43.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.16.1 / Selenium 4.43.0 / chrome 153.0.8010.48 windows
+[Test worker] INFO com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+окт. 14, 2026 2:26:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 153
+окт. 14, 2026 2:26:22 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for 153.0.8010.48. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.43.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.16.1 / Selenium 4.43.0 / chrome 153.0.8010.48 windows
+[Test worker] INFO com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+окт. 14, 2026 2:26:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 153
+окт. 14, 2026 2:26:25 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for 153.0.8010.48. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.43.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.16.1 / Selenium 4.43.0 / chrome 153.0.8010.48 windows
 ]]></system-err>
 </testsuite>
