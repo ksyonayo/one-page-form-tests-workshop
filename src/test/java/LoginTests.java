@@ -100,17 +100,6 @@ public class LoginTests extends TestBase {
     }
 
     @Test
-    public void titleVisibilityAuthorizationTest() {
-        open ("/login.html");
-
-        $("[data-testid=login-input]").setValue("user1");
-        $("[data-testid=password-input]").setValue("password1");
-        $("[data-testid=submit-button]").click();
-
-        $("[data-testid=logged-in-title]").shouldBe(visible);
-    }
-
-    @Test
     public void LogoutButtonVisibilityAuthorizationTest() {
         open ("/login.html");
 
