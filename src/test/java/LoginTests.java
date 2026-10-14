@@ -13,7 +13,6 @@ public class LoginTests extends TestBase {
 
     @Test
     public void successfulAuthorization() {
-
         open ("/login.html");
 
         $("[data-testid=login-input]").setValue("user1");
@@ -26,7 +25,6 @@ public class LoginTests extends TestBase {
     @Test
     // @Disabled("Auth by Press Enter is not implemented yet")
     public void successfulAuthorizationWithPressEnter() {
-
         open ("/login.html");
 
         $("[data-testid=login-input]").setValue("user1");
@@ -37,7 +35,6 @@ public class LoginTests extends TestBase {
 
     @Test
     public void wrongPasswordAuthorizationTest() {
-
         open ("/login.html");
 
         $("[data-testid=login-input]").setValue("user1");
@@ -49,7 +46,6 @@ public class LoginTests extends TestBase {
 
     @Test
     public void wrongCredentialsAuthorizationTest() {
-
         open ("/login.html");
 
         $("[data-testid=login-input]").setValue("user123");
@@ -61,7 +57,6 @@ public class LoginTests extends TestBase {
 
     @Test
     public void tooShortLoginAuthorizationTest() {
-
         open ("/login.html");
 
         $("[data-testid=login-input]").setValue("us");
@@ -73,7 +68,6 @@ public class LoginTests extends TestBase {
 
     @Test
     public void tooShortPasswordAuthorizationTest() {
-
         open("/login.html");
 
         $("[data-testid=login-input]").setValue("user1");
@@ -85,7 +79,6 @@ public class LoginTests extends TestBase {
 
     @Test
     public void emptyPasswordAuthorizationTest() {
-
         open("/login.html");
 
         $("[data-testid=login-input]").setValue("user1");
@@ -96,7 +89,6 @@ public class LoginTests extends TestBase {
 
         @Test
     public void emptyFormAuthorizationTest() {
-
         open ("/login.html");
 
         $("[data-testid=submit-button]").click();
@@ -106,7 +98,6 @@ public class LoginTests extends TestBase {
 
     @Test
     public void titleVisibilityAuthorizationTest() {
-
         open ("/login.html");
 
         $("[data-testid=login-input]").setValue("user1");
@@ -118,7 +109,6 @@ public class LoginTests extends TestBase {
 
     @Test
     public void LogoutButtonVisibilityAuthorizationTest() {
-
         open ("/login.html");
 
         $("[data-testid=login-input]").setValue("user1");
