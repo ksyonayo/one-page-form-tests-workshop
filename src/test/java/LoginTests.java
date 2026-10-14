@@ -14,7 +14,7 @@ public class LoginTests extends TestBase {
     @Test
     public void successfulAuthorization() {
         open ("/login.html");
-        $("[data-testid=login-form-title]").shouldHave(text("Loin Form"));
+        $("[data-testid=login-form-title]").shouldHave(text("Login Form"));
 
         $("[data-testid=login-input]").setValue("user1");
         $("[data-testid=password-input]").setValue("password1");
