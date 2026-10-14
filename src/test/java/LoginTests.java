@@ -14,11 +14,14 @@ public class LoginTests extends TestBase {
     @Test
     public void successfulAuthorization() {
         open ("/login.html");
+        $("[data-testid=login-form-title]").shouldHave(text("Loin Form"));
 
         $("[data-testid=login-input]").setValue("user1");
         $("[data-testid=password-input]").setValue("password1");
         $("[data-testid=submit-button]").click();
 
+        $("[data-testid=login-form]").shouldNotBe(visible);
+        $("[data-testid=logged-in-title]").shouldHave(text("Logged In Form"));
         $("[data-testid=welcome-message]").shouldHave(text("Welcome, user1!"));
     }
 
